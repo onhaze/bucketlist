@@ -1,0 +1,57 @@
+{
+  "name": "my-bucket-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "dist": "vite build && electron-builder"
+  },
+  "build": {
+    "appId": "com.mybucket.app",
+    "productName": "버킷리스트",
+    "directories": {
+      "output": "dist_electron"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "files": [
+      "dist/**/*",
+      "main.cjs",
+      "package.json"
+    ]
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "electron-is-dev": "^3.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.11.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "cross-env": "^10.1.0",
+    "electron": "^39.2.7",
+    "electron-builder": "^26.0.12",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "npm:rolldown-vite@7.2.5",
+    "wait-on": "^9.0.3"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.2.5"
+  }
+}
