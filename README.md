@@ -1,16 +1,29 @@
-# React + Vite
+# 📝 나만의 버킷리스트 앱 (My Bucket List)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+심플하고 깔끔한 디자인의 데스크톱용 버킷리스트 관리 도구입니다. `React`와 `Electron`을 사용하여 제작되었습니다.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ 주요 기능
 
-## React Compiler
+**버킷리스트 관리**: 하고 싶은 일을 자유롭게 추가하고 삭제할 수 있습니다.
+**시각적 통계**: 히트맵(Heatmap) 기능과 진행도 바(Progress Bar)를 통해 전체적인 달성 현황을 한눈에 쉽게 파악할 수 있습니다.
+**데이터 보존**: 앱을 껐다 켜도 입력한 데이터가 사라지지 않고 유지됩니다.
+**사용자 맞춤형 디자인**: 직관적인 UI로 누구나 쉽게 사용할 수 있습니다.
+**커스터마이징**: 사용자가 직접 테마 색상과 배너 문구를 수정하여 본인만의 스타일로 앱을 꾸밀 수 있습니다.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 다운로드 및 설치 (Windows)
 
-## Expanding the ESLint configuration
+오른쪽 **[Releases]** 섹션에서 최신 버전의 `.exe` 파일을 다운로드합니다.
+다운로드한 `Setup.exe` 파일을 실행하여 설치합니다.
+※ 공식 인증서가 없는 개인 앱이므로, 실행 시 파란색 경고창이 뜨면 [추가 정보] → [실행]을 눌러주세요.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ 사용 기술
+
+### Frontend
+<img src="https://img.shields.io/badge/react-ffffff?style=flat-square&logo=react&logoColor=61DAFB"/>
+<img src="https://img.shields.io/badge/vite-ffffff?style=flat-square&logo=vite&logoColor=646CFF"/>
+<img src="https://img.shields.io/badge/javascript-ffffff?style=flat-square&logo=javascript&logoColor=F7DF1E"/>
+
+### Framework
+<img src="https://img.shields.io/badge/electron-ffffff?style=flat-square&logo=electron&logoColor=47848F"/>
+<img src="https://img.shields.io/badge/css-ffffff?style=flat-square&logo=css&logoColor=663399"/>
